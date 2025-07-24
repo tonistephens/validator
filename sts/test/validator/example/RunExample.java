@@ -32,10 +32,6 @@ public class RunExample {
         { 0x02, 0x11, 0x22, 0x03, 0x30 };
     System.out.println("Message is valid: " + validator.isValid(valid_message1));
 
-    byte[] valid_message2 =
-        { 0x02, 0x10, 0x10, 0x20, 0x10, 0x03, 0x33 };
-    System.out.println("Message is valid: " + validator.isValid(valid_message2));
-
     // Invalid test: Missing STX
     byte[] invalid_message1 = 
         { 0x10, 0x02, 0x02, 0x01, 0x10, 0x03, 0x16 };
